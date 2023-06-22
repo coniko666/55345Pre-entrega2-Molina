@@ -27,3 +27,16 @@ nav{
 h1, h2, h5{
     text-align: center;
 }
+
+/*Aplicando media queries*/
+
+@media (max-width: 576px){
+header{
+    display: none;
+}
+article{
+    display: flex;
+    flex-direction: column;
+}
+
+}
