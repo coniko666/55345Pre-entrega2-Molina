@@ -28,6 +28,12 @@ h1, h2, h5{
     text-align: center;
 }
 
+.contenido{
+    display: grid;
+    grid-template-columns: 6fr 2fr;
+    grid-template-rows: auto;
+}
+
 /*Aplicando media queries*/
 
 @media (max-width: 576px){
@@ -39,4 +45,8 @@ article{
     flex-direction: column;
 }
 
+.contenido{
+    display: flex;
+    flex-direction: column;
+}
 }
