@@ -7,18 +7,29 @@
 
 body {
     background-image: url(../img/fondoblanconegro.jpg);
-    font-family:'Sacramento';
+    font-family:'Sofia';
     font-size: x-large;
     font-weight: bold;
 }
 
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+main{
+    background-color: rgba(71, 61, 139, 0.271);
+}
+
 article{
+    background-color: rgba(240, 128, 128, 0.226);
     display:grid;
     grid-template-columns: 2fr 2fr;
     grid-template-rows: auto;
 }
 
 nav{
+    background-color: rgba(240, 128, 128, 0.226);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows:auto;
@@ -26,6 +37,14 @@ nav{
 
 h1, h2, h5{
     text-align: center;
+}
+
+footer{
+    background-color: rgba(147, 112, 216, 0.36);
+}
+
+aside{
+    background-color: rgba(216, 112, 147, 0.43);
 }
 
 .contenido{
