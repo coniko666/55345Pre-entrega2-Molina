@@ -1,0 +1,17 @@
+*{
+    margin: map-get($reset, mrg);
+    padding: map-get($reset, mrg);
+    list-style-type: map-get($reset, decoTexto);
+    text-decoration: map-get($reset, decoTexto);
+}
+
+body{
+    font-family: $font-prm;
+    font-size: $font-uno;
+    background-color: $fondo-tres;
+
+    header{
+        display: flex;
+        justify-content: space-between;
+        }
+}
