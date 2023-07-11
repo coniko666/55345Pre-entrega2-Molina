@@ -1,18 +1,18 @@
 *{
-    margin: map-get($reset, mrg);
-    padding: map-get($reset, mrg);
-    list-style-type: map-get($reset, decoTexto);
-    text-decoration: map-get($reset, decoTexto);
+    @extend %reseteo;
 }
 
 body{
-    font-family: $font-prm;
+    font-family: 'Sofia';
     font-size: $font-uno;
     background-color: $fondo-tres;
 
     header{
         display: flex;
         justify-content: space-between;
+        @media (max-width: 576px){
+            display: none;
+        }
         }
 }
 
@@ -34,4 +34,27 @@ nav{
 article{
     @extend %row;
     grid-template-columns: 2fr 2fr;
+    @media (max-width: 576px){
+        @extend %row2;
+    }
+}
+
+footer{
+    background-color: rgba(147, 112, 216, 0.36);
+}
+   h5{
+    text-align: center;
+   }
+
+
+aside{
+    background-color: rgba(216, 112, 147, 0.43);
+}
+
+.contenido{
+    @extend %row;
+    grid-template-columns: 6fr 2fr;
+    @media (max-width: 576px){
+        @extend %row2;
+    }
 }
