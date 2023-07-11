@@ -5,3 +5,67 @@
 
 
 @import url(./componentes/cuerpo.scss);
+
+
+
+
+*{
+    @extend %reseteo;
+}
+
+body{
+    font-family: 'Sofia';
+    font-size: x-large;
+    background-color: $fondo-tres;
+
+    header{
+        display: flex;
+        justify-content: space-between;
+        @media (max-width: 576px){
+            display: none;
+        }
+        }
+}
+
+main{
+    background-color: rgba(71, 61, 139, 0.271);
+} 
+    h1{
+        text-align: center;
+    }
+    h2{
+        text-align: center;
+    }
+
+nav{
+    @extend %row;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+article{
+    @extend %row;
+    grid-template-columns: 2fr 2fr;
+    @media (max-width: 576px){
+        @extend %rowDos;
+    }
+}
+
+footer{
+    background-color: rgba(147, 112, 216, 0.36);
+}
+   h5{
+    text-align: center;
+   }
+
+
+aside{
+    background-color: rgba(216, 112, 147, 0.43);
+}
+
+.contenido{
+    @extend %row;
+    grid-template-columns: 6fr 2fr;
+    @media (max-width: 576px){
+         @extend %rowDos;
+    }
+}
